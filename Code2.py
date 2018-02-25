@@ -12,7 +12,7 @@ BASE_URL = 'https://eastus.api.cognitive.microsoft.com/face/v1.0/'  # Replace wi
 CF.BaseUrl.set(BASE_URL)
 
 # You can use this example JPG or replace the URL below with your own URL to a JPEG image.
-img_url = 'https://raw.githubusercontent.com/malhotraguy/traspod/master/Jermey2.jpg'
+img_url = 'https://raw.githubusercontent.com/malhotraguy/traspod/master/Jeremy2.jpg'
 faces = CF.face.detect(img_url)
 print(faces)
 print(faces[0]['faceRectangle'])
