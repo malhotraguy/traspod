@@ -93,7 +93,7 @@ for f in all_faceid:
   print(r)
 identical_face_id = [f for f in all_faceid
                      if CF.face.verify(f, test_faceId)['isIdentical'] == True]
-for i in xrange(len(results)):
+for i in range(len(results)):
   for face in results[i]:
     if face['faceId'] in identical_face_id:
       height = face['faceRectangle']['height']
